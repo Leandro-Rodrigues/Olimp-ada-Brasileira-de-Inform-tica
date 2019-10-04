@@ -10,18 +10,18 @@ using namespace std;
 
 int main() {
     int n, m;
-	int x, v, y;
-	int soma = 0;
+    int x, v, y;
+    int soma = 0;
     int vet[1005];
 
-	cin >> m >> n;
-	memset(vet, 0, sizeof vet);
+    cin >> m >> n;
+    memset(vet, 0, sizeof vet);
 
-	for (int i = 0; i < m; i++) {
-		cin >> x >> v >> y;
- 	    vet[x] -= v;
-	    vet[y] += v;
-	    soma += v;
+    for (int i = 0; i < m; i++) {
+	cin >> x >> v >> y;
+ 	vet[x] -= v;
+	vet[y] += v;
+	soma += v;
     }
 
     int melhor = 0;
