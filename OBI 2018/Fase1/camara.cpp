@@ -19,19 +19,19 @@ int main() {
 
 	for (int i = 0; i < m; i++) {
 		cin >> x >> v >> y;
-		vet[x] -= v;
-		vet[y] += v;
-		soma += v;
-	}
+ 	    vet[x] -= v;
+	    vet[y] += v;
+	    soma += v;
+    }
 
-	int melhor = 0;
-	for (int i = 1; i <= n; i++) {
-		melhor += abs(vet[i]);
-	}
-	melhor /= 2;
+    int melhor = 0;
+    for (int i = 1; i <= n; i++) {
+    	melhor += abs(vet[i]);
+    }
+    melhor /= 2;
 
-	puts(melhor == soma ? "N" : "S");
-	cout << melhor << endl;
+    puts(melhor == soma ? "N" : "S");
+    cout << melhor << endl;
 
     return 0;
 }
