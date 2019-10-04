@@ -9,7 +9,7 @@ using namespace std;
 
 
 int main() {
-	int n, m;
+    int n, m;
 	int x, v, y;
 	int soma = 0;
 	int vet[1005];
