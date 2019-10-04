@@ -68,7 +68,7 @@ void attMenor(int no, int esq, int dir, int val, int pos) {
 
 pii consultaMaior(int no, int esq, int dir, int ql, int qr) {
 	if (esq > qr || dir < ql)
-		return pii(-INF, 0);
+	  	return pii(-INF, 0);
 	if (esq >= ql && dir <= qr)
 		return arvMaior[no];
 	int meio = (esq + dir) >> 1;
