@@ -33,5 +33,5 @@ int main() {
 	puts(melhor == soma ? "N" : "S");
 	cout << melhor << endl;
 
-	return 0;
+    return 0;
 }
