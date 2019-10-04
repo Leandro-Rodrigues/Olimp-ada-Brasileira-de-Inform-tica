@@ -12,7 +12,7 @@ int main() {
     int n, m;
 	int x, v, y;
 	int soma = 0;
-	int vet[1005];
+    int vet[1005];
 
 	cin >> m >> n;
 	memset(vet, 0, sizeof vet);
