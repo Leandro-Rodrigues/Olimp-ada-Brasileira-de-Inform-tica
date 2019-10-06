@@ -7,8 +7,9 @@ using namespace std;
 #define pb push_back
 #define pii pair<int, int>
 
+char mapa[105][105];
+
 void inicializa(int l, int c) {
-	char mapa[l + 2][c + 2];
 	for (int i = 0; i < l + 1; ++i) {
 		mapa[i][0] = '.';
 		mapa[i][c + 1] = '.';
@@ -25,9 +26,8 @@ int main() {
 	
 	int l, c;
 	int a, b;
-	cin >> l >> c;
 
-	char mapa[l + 2][c + 2];
+	cin >> l >> c;
 	inicializa(l, c);
 
 	for (int i = 1; i <= l; ++i) {
